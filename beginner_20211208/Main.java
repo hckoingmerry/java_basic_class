@@ -1,3 +1,6 @@
+//작성자: 고현창
+//작성일: 2021.12.08
+
 //(주석 적기: java에서는 //, 라인주석이라고 함)
 //(파이썬에서는 #)
 //(HTML에서는 <!---->)
@@ -8,12 +11,14 @@
 2. 참고로 주석은 컴퓨터가 읽지 않음
 3. 코드의 실행을 잠시 멈추고 문제점을 파악하는 용도로도 사용*/
 
-/*class는 객체를 찍어내는 도구 -> 객체지향언어
+/*
+class는 객체를 찍어내는 도구 -> 객체지향언어
 class Main {
   public static void main(String[] args) {
   System.out.println("Hello World!");
   }
-}*/
+}
+*/
 
 
 /*
@@ -37,9 +42,6 @@ class Main {
   }
 }
 */
-
-//작성자: 고현창
-//작성일: 2021.12.08
 
 /*
 변수: 어떤 값을 보관하는 용도
@@ -271,13 +273,35 @@ class Main {
 */
 
 /*
-리스트(list): 배열과 비슷한 자료형인데, 크기가 정해지지 않고 동적으로 변한다. 배열은 크기가 생성시에 정해지지만 리스트는 그 크기가 정해지지 않아서 원하는 만큼 자유롭게 담을 수 있음
-ArrayList가 가장 많이 쓰임. 그리고 보통 같이 쓰이는 게 import java.util.ArrayList;
+리스트(list): 배열과 비슷한 자료형인데, 크기가 정해지지 않고 동적으로 변한다. 배열은 크기가 생성시에 정해지지만 리스트는 그 크기가 정해지지 않아서 원하는 만큼 자유롭게 담을 수 있음.
+그중 ArrayList가 가장 많이 쓰임. 그리고 보통 같이 쓰이는 게 import java.util.ArrayList;
+
+import java.util.ArrayList;
 
 class Main {
   public static void main(String[] arges) {
     
     ArrayList pitches = new ArrayList();
+    pitches.add("123");
+    pitches.add("234");
+    pitches.add("789");
+
+    pitches.add(0,"133"); //이걸로 0번째에 우겨넣은 것
+
+    System.out.println(pitches.get(1)); //123
+    //(즉 두번째를 뽑아내는 건데, 위에서 0번째에 다른 것을 넣었기 때문에 기존의 0번째가 1번이 된 것)
+    //get() 메서드를 이용하여 특정 인덱스값을 추출
+
+    System.out.println(pitches.size()); //4
+    //size() 메서드를 이용하여 리스트의 개수를 확인
+
+    System.out.println(pitches.contains("234")); //true
+    //contains() 메서드를 이용하여 포함 여부 확인
+
+    System.out.println(pitches.remove("789")); //remove() 메서드를 이용하여 해당 객체 삭제하고 결과를 리턴
+
+    System.out.println(pitches.remove(0)); //133
+    //remove() 메서드를 이용하여 해당 인덱스의 객체를 삭제
   }
 }
 */
