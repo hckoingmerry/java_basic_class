@@ -52,7 +52,7 @@ ex) String b; => b라는 변수명에 String(문자열)을 보관할 것이다.
 1. 변수명은 숫자로는 시작할 수 없다.
 ex) a100 (O), 100a(X)
 2. 언더바(_)와 $는 사용가능하지만, @, ! 등 특수문자는 사용하지 못한다.
-3. 예약어는 변수명으로 사용할 수 없다. (ing, class 등은 X)
+3. 예약어는 변수명으로 사용할 수 없다. (int, class 등은 X)
 4. 한글은 사용하지 않는다. 그리고 변수는 가급적 소문자로 만든다.
 
 잘못된 변수명 예시
@@ -86,7 +86,7 @@ ex) run(); / runFast {}; / getBackground{};
 ex) int age() = 21
 ex) long counsStar = 2545654786783528L (끝에 L이 붙으면 엄청 큰 숫자임을 알 수 있음)
 
-실수: 주로 double을 쓰며, 무한소수면 float를 쓰기도 함수
+실수: 주로 double을 쓰며, 무한소수면 float를 쓰기도 함
 ex) float pi = 3.14F
 ex) double morePi = 3.141592
 */
@@ -103,9 +103,9 @@ class Main {
     System.out.println(a*b);
     System.out.println(a/b);
     System.out.println(a%b); //나머지 연산자 (홀/짝/배수 찾기에 용이함)
-    System.out.println(7%2); //홀수 (나머지 1)
-    System.out.println(6%2); //짝수 (나머지 0)
-    System.out.println(7%2); //배수
+    System.out.println(6%2); //1 (2로 나눠지지 않으니 즉 홀수)
+    System.out.println(6%2); //0 (2로 나눠지므로 즉 짝수)
+    System.out.println(7%2); //1 (나머지가 1이 있으므로 배수가 아님)
     
 
     
@@ -146,15 +146,14 @@ String a = "Hello World";
 */
 
 /*
-문자열에서 많이 사용되는 메서드 정리
+문자열에서 많이 사용되는 메서드 정리 (0에서 시작, 빈칸도 글자, 이하가 아닌 미만으로 표현)
 - equals: 두 개의 문자열이 동일한지 비교하여 결과 리턴
-- indexOf: 문자열에서 특정 문자가 시작되는 위치를 리턴 (0에서 시작, 빈칸도 글자, 이하보다는 미만으로 표현)
+- indexOf: 문자열에서 특정 문자가 시작되는 위치를 리턴
 - replaceAll: 문자열 중 특정 문자열을 다른 문자열로 치환
 - substring: 문자열 중 특정 부분을 뽑아낼 때 사용
 - toUpperCase: 모든 문자열을 대문자로 변환
-*/
 
-/*
+
 class Main {
   public static void main(String[] args) {
     String a = "hello";
