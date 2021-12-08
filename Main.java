@@ -25,7 +25,7 @@ class Main {
 //클래스 선언
 //클래스 블록 (class { ~ }) : 소스 코드의 가장 바깥 (자바는 언제나 class로 시작)
 //class명은 파일명과 반드시 동일해야 함
-class Main {
+class main {
   
   //클래스 안에는 매서드 블록 (또는 함수 블록. 어쨌든 정확한 표현은 매서드 블록): 기능을 정의
   //main 메서드가 프로그램 전체의 시작점이다.
@@ -307,6 +307,7 @@ class Main {
 */
 
 
+
 /*
 Generics: 입력되는 객체의 자료형을 강제한다.
 
@@ -315,26 +316,28 @@ ArrayList pitches = new ArrayList();
 
 ArrayList<Strings> pitches = new ArrayList<String>();
 //"pitches라는 ArrayList에 담을 수 있는 자료형은 String뿐이다."라고 제한하는 것
-*/
+
 import java.util.ArrayList;
 
 class Main {
   public static void main(String[] args) {
     
     ArrayList aList = new ArrayList();
-    /* Generics를 이용한다면
+    
+    //Generics를 이용한다면
     ArrayList<String> aList = new ArrayList<String>();
-    */
+    
 
     aList.add("hello");
     aList.add("java");
 
     String hello = (String)aList.get(0);
     String java = (String)aList.get(1);
-    /* Generics 반영하여 수정한다면,
+    
+    //Generics 반영하여 수정한다면,
     System hello = aList.get(0);
     System java = aList.get(1);
-    */
+    
     //String에는 String만 들어올 수 있고 객체는 들어올 수 없기에 객체를 강제로 String화 시켜서 집어넣은 것
     //Generics를 사용하여 자료형을 선언하면 그 이후로는 자료형에 대한 형변환 casting이 필요 없다. 이미 자바가 aList에는 반드시 String 자료형만 추가된다는 것을 알고 있다. Generics를 사용하면 형변환에 대한 불필요한 코딩과 잘못된 형변환 등의 예외를 방지할 수 있다.
 
@@ -342,3 +345,4 @@ class Main {
     System.out.println(java);
   }
 }
+*/
