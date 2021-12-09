@@ -84,7 +84,7 @@ ex) run(); / runFast {}; / getBackground{};
 
 정수: int(숫자) (long이 들어가면 엄청 큰 숫자)
 ex) int age() = 21
-ex) long counsStar = 2545654786783528L (끝에 L이 붙으면 엄청 큰 숫자임을 알 수 있음)
+ex) long countStar = 2545654786783528L (끝에 L이 붙으면 엄청 큰 숫자임을 알 수 있음)
 
 실수: 주로 double을 쓰며, 무한소수면 float를 쓰기도 함
 ex) float pi = 3.14F
