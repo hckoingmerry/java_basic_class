@@ -31,7 +31,7 @@ class main {
   //main 메서드가 프로그램 전체의 시작점이다.
   public static void main(String[] args) {
     //public: 접근제어자 (public이라고 적는 건 모두 접근 가능이라는 것)
-    //statuc: 객체를 생성하지 않고도 사용 가능
+    //static: 객체를 생성하지 않고도 사용 가능
     //void: 리턴값이 없음을 의미함
     //[] 배열 / String: 문자열 / args: 변수들
     
@@ -61,8 +61,8 @@ String b#;
 int main;
 
 자료형 (type)
-int a; 변수명 a는 int 자료형 변수임으로 a라는 변수에는 정수만 담을 수 있다. (1, 2, 10, 100, 300......)
-String b; 변수명 b는 String 자료형 변수임으로 b라는 변수에는 문자열만 담을 수 있다. ("boy", "Hello World"...)
+int a; 변수명 a는 int 자료형 변수이므로 a라는 변수에는 정수만 담을 수 있다. (1, 2, 10, 100, 300......)
+String b; 변수명 b는 String 자료형 변수이므로 b라는 변수에는 문자열만 담을 수 있다. ("boy", "Hello World"...)
 */
 
 /*
@@ -315,7 +315,7 @@ ArrayList pitches = new ArrayList();
 
 ArrayList<Strings> pitches = new ArrayList<String>();
 //"pitches라는 ArrayList에 담을 수 있는 자료형은 String뿐이다."라고 제한하는 것
-
+*/
 import java.util.ArrayList;
 
 class Main {
@@ -324,7 +324,7 @@ class Main {
     ArrayList aList = new ArrayList();
     
     //Generics를 이용한다면
-    ArrayList<String> aList = new ArrayList<String>();
+    //ArrayList<String> aList = new ArrayList<String>();
     
 
     aList.add("hello");
@@ -334,8 +334,8 @@ class Main {
     String java = (String)aList.get(1);
     
     //Generics 반영하여 수정한다면,
-    System hello = aList.get(0);
-    System java = aList.get(1);
+    //System hello = aList.get(0);
+    //System java = aList.get(1);
     
     //String에는 String만 들어올 수 있고 객체는 들어올 수 없기에 객체를 강제로 String화 시켜서 집어넣은 것
     //Generics를 사용하여 자료형을 선언하면 그 이후로는 자료형에 대한 형변환 casting이 필요 없다. 이미 자바가 aList에는 반드시 String 자료형만 추가된다는 것을 알고 있다. Generics를 사용하면 형변환에 대한 불필요한 코딩과 잘못된 형변환 등의 예외를 방지할 수 있다.
