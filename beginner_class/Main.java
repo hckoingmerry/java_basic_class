@@ -315,12 +315,11 @@ ArrayList pitches = new ArrayList();
 
 ArrayList<Strings> pitches = new ArrayList<String>();
 //"pitches라는 ArrayList에 담을 수 있는 자료형은 String뿐이다."라고 제한하는 것
-*/
+
 import java.util.ArrayList;
 
 class Main {
   public static void main(String[] args) {
-    
     ArrayList aList = new ArrayList();
     
     //Generics를 이용한다면
@@ -343,5 +342,6 @@ class Main {
     System.out.println(hello);
     System.out.println(java);
   }
+    
 }
 */
