@@ -460,8 +460,7 @@ public class Main {
     Scanner scan = new Scanner(System.in);
 
     do {
-      i = scan.nextInt();
-      System.out.println("입력받은 값:" +i);
+      System.out.print("입력받은 값:" +i); i = scan.nextInt();
     } while(i != 0);
       System.out.println("종료");
   }
