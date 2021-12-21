@@ -9,7 +9,7 @@ class XX 안에서라면, 전역변수라고 하며 2가지가 있음
 void method() {} 안에서라면,
 - int b = 0; 이건 지역 변수 (메소드 영역의 안쪽에서 선언)
 
-public class AVariableExam {
+public class VariableExam {
     public static void main(String[] args) {
         System.out.println("Card.width = " + Card.width);
         System.out.println("Card.height = " + Card.height);
