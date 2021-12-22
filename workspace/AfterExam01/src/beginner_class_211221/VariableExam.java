@@ -1,3 +1,6 @@
+package beginner_class_211221;
+
+
 /* 선언 위치에 따른 변수의 종류
 - 클래스 변수, 인스턴스(객체) 변수, 지역변수
 - static 붙는 변수는 클래스 변수, 붙지 않으면 객체 변수
@@ -8,7 +11,7 @@ class XX 안에서라면, 전역변수라고 하며 2가지가 있음
 
 void method() {} 안에서라면,
 - int b = 0; 이건 지역 변수 (메소드 영역의 안쪽에서 선언)
-
+*/
 public class VariableExam {
     public static void main(String[] args) {
         System.out.println("Card.width = " + Card.width);
@@ -44,4 +47,3 @@ class Card {
 //인스턴스 변수 즉 객체변수는 객체가 생성될 때마다 함께 생성되므로 객체마다 각기 다른 값을 유지할 수 있다.
 //반면 클래스 변수는 모든 객체들이 하나의 저장공간을 공유한다.
 //따라서 항상 같은 공통된 값을 갖는다.
-*/

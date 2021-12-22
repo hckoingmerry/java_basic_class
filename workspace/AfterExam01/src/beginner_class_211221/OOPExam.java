@@ -1,4 +1,10 @@
-/*객체지향의 핵심은
+package beginner_class_211221;
+
+public class OOPExam {
+
+}
+
+/* 객체지향의 핵심은
 - 실제 세계는 객체로 이루어져 있고,
 - 발생하는 모든 사건들은 객체들간의 상호작용
 즉 실제 세계를 컴퓨터 속에 옮겨놓은 것과 같은 가상세계를 구현하고 이를 통해 많은 비용과 시간을 절약할 수 있다.
@@ -72,10 +78,3 @@ class Tv {
     }
 }
 */
-
-
-public class OOPExam {
-    public static void main(String[] args) {
-
-    }
-}
