@@ -36,12 +36,56 @@ package beginner_class_211222;
  * - 생성자에 private을 지정하면 외부에서 생성자에 접근할 수 없다. 클래스 내부에서만 객체를 생성할 수 있다.
  * 
  */
+class Time {
+	private int hour, minute, second;
+	//모든 멤버 변수의 접근 제어자는 private으로 하여 외부에서 직접 변수를 조작하지 못한도록 하고,
+	//이것을 다루기 위한 메서드들은 모두 public으로 하여  반드시 메서드를 통해서만 변수에 접근하도록 한다.
+	Time(int hour, int minute, int second) {
+	//생성자에도 접근제어자를 사용하면 객체 생성을 제한할 수 있다.
+	//보통 생성자의 경우는 클래스의 접근 제어자와 같게 설정하지만 다르게 설정할 수도 있다.
+	//생성자의 접근제어를 통해 객체 생성을 제한하면 객체의 개수를 제한할 수 있다.
+	//생성자가 private인 클래스는 다른 클래스의 조상이 될 수 없다.
+	//왜냐하면 자식 클래스의 객체를 생성할 때 조상클래스의 생성자를 호출해야 하기 때문
+		setHour(hour);
+		setMinute(minute);
+		setSecond(second);
+	}
+	public int getHour() {
+		return hour;
+	}
+	public void setHour(int hour) {
+		if (hour < 0 || hour > 23) return;
+		this.hour = hour;
+	}
+	public int getMinute() {
+		return minute;
+	}
+	public void setMinute(int minute) {
+		if (minute < 0 || minute > 59) return;
+		this.minute = minute;
+	}
+	public int getSecond() {
+		return second;
+	}
+	public void setSecond(int second) {
+		if (second < 0 || second > 59) return;
+		this.second = second;
+	}
+}
 
 public class FModifierExam {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		Time t = new Time(10, 1, 1);
+		System.out.println(t);
+		
+		//t.hour = 13; //변수 hour의 접근제어자가 private이므로 직접 접근은 불가능
+		t.setHour(t.getHour() + 1);
+		System.out.println(t.toString());
+		System.out.println(t.getHour());
+		System.out.println(t.getMinute());
+		System.out.println(t.getSecond());
 	}
 
 }
