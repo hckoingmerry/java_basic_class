@@ -11,6 +11,15 @@
 <body>
 
 <%@ include file="_header.jsp" %>
+
+<% 
+	String uid = (String) session.getAttribute("id");
+	if (uid == null) {
+		out.print("로그인 정보가 없습니다.");
+		response.sendRedirect("login.jsp");
+	}
+%>
+
 <div class="alert alert-primary" role="alert">
   메인페이지
 </div>

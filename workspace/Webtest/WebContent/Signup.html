@@ -46,10 +46,11 @@
     <!-- Custom styles for this template -->
     <link href="signin.css" rel="stylesheet">
   </head>
-  <body class="text-center">
-    
+  
+  
+  <body class="text-center">  
 <main class="form-signin">
-  <form action ="SignupServlet" method="get">
+  <form action ="signup.jsp" method="get">
     <img class="mb-4" src="http://pds.joins.com/news/component/htmlphoto_mmdata/200402/htm_20040225165332a000a600-001.GIF" alt="" width="72" height="57">
     <h1 class="h3 mb-3 fw-normal">회원가입</h1>
 
@@ -58,16 +59,12 @@
       <label for="floatingInput">아이디</label>
     </div>
     <div class="form-floating">
-      <input type="password" name="ps" class="form-control" id="floatingPassword" placeholder="Password">
+      <input type="password" name="ps" class="form-control" id="floatingPassword" placeholder="비밀번호">
       <label for="floatingPassword">비밀번호</label>
     </div>
     <div class="form-floating">
       <input type="text" name="name" class="form-control" id="floatingPassword" placeholder="이름">
       <label for="floatingPassword">이름</label>
-    </div>
-    <div class="form-floating">
-      <input type="email" name="email" class="form-control" id="floatingPassword" placeholder="이메일">
-      <label for="floatingPassword">이메일</label>
     </div>
 
     <!-- <div class="checkbox mb-3">
@@ -75,7 +72,7 @@
         <input type="checkbox" value="remember-me"> Remember me
       </label>
     </div> -->
-    <button class="w-100 btn btn-lg btn-primary" type="submit">회원가입</button>
+    <button class="w-100 btn btn-lg btn-primary" type="submit" value="회원가입">회원가입</button>
     <p class="mt-5 mb-3 text-muted">&copy; 2017–2022 By KOHC</p>
   </form>
 </main>
